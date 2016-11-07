@@ -36,7 +36,7 @@ from weblayers.google_maps import OlGooglePhysicalLayer, OlGoogleStreetsLayer, O
 from weblayers.osm import OlOpenStreetMapLayer, OlOpenCycleMapLayer, OlOCMLandscapeLayer, OlOCMPublicTransportLayer, OlOSMHumanitarianDataModelLayer
 from weblayers.bing_maps import OlBingRoadLayer, OlBingAerialLayer, OlBingAerialLabelledLayer
 from weblayers.apple_maps import OlAppleiPhotoMapLayer
-from weblayers.bsas import OlBSASMapLayer
+from weblayers.bsas import OlBSASMapLayer, OlBSASFotografia1965MapLayer, OlBSASFotografia1978MapLayer
 from weblayers.osm_stamen import OlOSMStamenTonerLayer, OlOSMStamenTonerLiteLayer, OlOSMStamenWatercolorLayer, OlOSMStamenTerrainLayer
 from weblayers.map_quest import OlMapQuestOSMLayer, OlMapQuestOpenAerialLayer
 import os.path
@@ -105,6 +105,8 @@ class OpenlayersPlugin:
 
         self._olLayerTypeRegistry.register(OlAppleiPhotoMapLayer())
         self._olLayerTypeRegistry.register(OlBSASMapLayer())
+        self._olLayerTypeRegistry.register(OlBSASFotografia1965MapLayer())
+        self._olLayerTypeRegistry.register(OlBSASFotografia1978MapLayer())
 
         for group in self._olLayerTypeRegistry.groups():
             groupMenu = group.menu()
