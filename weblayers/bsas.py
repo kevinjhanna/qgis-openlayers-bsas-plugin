@@ -22,23 +22,27 @@ email                : pka at sourcepole.ch
 
 from weblayer import WebLayer3857
 
-
-class OlBSASMapLayer(WebLayer3857):
+class OlBSASMapLayerBase(WebLayer3857):
 
     emitsLoadEnd = True
 
-    def __init__(self):
-        WebLayer3857.__init__(self, groupName="Buenos Aires", groupIcon="apple_icon.png",
-                              name='Con transporte', html='bsas_con_transporte.html')
+    def __init__(self, html, name):
+        WebLayer3857.__init__(self, groupName="Buenos Aires", groupIcon="./bsas_icon.png", name=name, html=html)
 
-class OlBSASFotografia1965MapLayer(WebLayer3857):
-    emitsLoadEnd = True
-    def __init__(self):
-        WebLayer3857.__init__(self, groupName="Buenos Aires", groupIcon="apple_icon.png",
-                              name='Fotos 1965', html='caba_fotografias_1965.html')
 
-class OlBSASFotografia1978MapLayer(WebLayer3857):
-    emitsLoadEnd = True
+class OlBSASMapLayer(OlBSASMapLayerBase):
+
     def __init__(self):
-        WebLayer3857.__init__(self, groupName="Buenos Aires", groupIcon="apple_icon.png",
-                              name='Fotos 1978', html='caba_fotografias_1978.html')
+        OlBSASMapLayerBase.__init__(self, name='Con transporte', html='bsas_con_transporte.html')
+
+class OlBSASFotografia1965MapLayer(OlBSASMapLayerBase):
+    
+    def __init__(self):
+        OlBSASMapLayerBase.__init__(self, name='Fotos 1965', html='caba_fotografias_1965.html')
+
+class OlBSASFotografia1978MapLayer(OlBSASMapLayerBase):
+    
+    def __init__(self):
+        OlBSASMapLayerBase.__init__(self, name='Fotos 1978', html='caba_fotografias_1978.html')
+
+

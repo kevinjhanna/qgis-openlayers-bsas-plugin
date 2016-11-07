@@ -65,8 +65,8 @@ class OpenlayersPlugin:
         self.dlgAbout = AboutDialog()
 
     def initGui(self):
-        self._olMenu = QMenu("OpenLayers plugin")
-        self._olMenu.setIcon(QIcon(":/plugins/openlayers/openlayers.png"))
+        self._olMenu = QMenu("OpenLayers plugin BsAs")
+        self._olMenu.setIcon(QIcon(":/plugins/openlayers_bsas/bsas_icon.png"))
 
         # Overview
         self.overviewAddAction = QAction(QApplication.translate("OpenlayersPlugin", "OpenLayers Overview"), self.iface.mainWindow())
@@ -104,6 +104,7 @@ class OpenlayersPlugin:
         self._olLayerTypeRegistry.register(OlMapQuestOpenAerialLayer())
 
         self._olLayerTypeRegistry.register(OlAppleiPhotoMapLayer())
+
         self._olLayerTypeRegistry.register(OlBSASMapLayer())
         self._olLayerTypeRegistry.register(OlBSASFotografia1965MapLayer())
         self._olLayerTypeRegistry.register(OlBSASFotografia1978MapLayer())
