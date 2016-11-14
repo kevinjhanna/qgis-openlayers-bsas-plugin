@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/static/style/plugins.xsl" ?>
+<plugins>
+    <pyqgis_plugin name="BuenosAiresOpenLayers" version="2.7" plugin_id="11">
+        <description><![CDATA[Place a description here]]></description>
+        <about><![CDATA[Place a description here]]></about>
+        <version>2.7</version>
+        <trusted>True</trusted>
+        <qgis_minimum_version>2.0.0</qgis_minimum_version>
+        <qgis_maximum_version>2.99.0</qgis_maximum_version>
+        <homepage><![CDATA[https://kevinjhanna.github.io/qgis-openlayers-bsas-plugin/]]></homepage>
+        <file_name>openlayers_plugin.zip</file_name>
+        <icon>/qgis-openlayers-bsas-plugin/bsas_icon.png</icon>
+        <author_name><![CDATA[Martin Goffan, Kevin Hanna]]></author_name>
+        <download_url>https://kevinjhanna.github.io/qgis-openlayers-bsas-plugin/</download_url>
+        <uploaded_by><![CDATA[elpaso]]></uploaded_by>
+        <create_date>2016-10-25T15:27:19.041464</create_date>
+        <update_date>2016-10-25T15:27:19.041464</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker><![CDATA[https://github.com/kevinjhanna/qgis-openlayers-bsas-plugin/issues]]></tracker>
+        <repository><![CDATA[https://github.com/kevinjhanna/qgis-openlayers-bsas-plugin]]></repository>
+        <tags><![CDATA[viewer,wkt]]></tags>
+        <downloads>38832</downloads>
+        <average_vote>4.71981120755</average_vote>
+        <rating_votes>25</rating_votes>
+        <external_dependencies></external_dependencies>
+        <server>False</server>
+    </pyqgis_plugin>
+</plugins>
