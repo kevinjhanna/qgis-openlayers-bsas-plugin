@@ -6,6 +6,10 @@
 # Compile
 3. make clean && make compile
 
+# Deploy
+
+4. make package VERSION=<sha-1 del commit>
+
 
 
     
