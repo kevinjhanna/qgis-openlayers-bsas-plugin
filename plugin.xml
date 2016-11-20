@@ -1,7 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<?xml-stylesheet type="text/xsl" href="/static/style/plugins.xsl" ?>
 <plugins>
-    <pyqgis_plugin name="BuenosAiresOpenLayers" version="2.7" plugin_id="11">
+    <pyqgis_plugin name="BuenosAiresOpenLayers" version="1.0" plugin_id="1">
         <description><![CDATA[Place a description here]]></description>
         <about><![CDATA[Place a description here]]></about>
         <version>2.7</version>
@@ -9,10 +8,10 @@
         <qgis_minimum_version>2.0.0</qgis_minimum_version>
         <qgis_maximum_version>2.99.0</qgis_maximum_version>
         <homepage><![CDATA[https://kevinjhanna.github.io/qgis-openlayers-bsas-plugin/]]></homepage>
-        <file_name>openlayers_plugin.zip</file_name>
+        <file_name>bsas_openlayers_plugin.zip</file_name>
         <icon>https://kevinjhanna.github.io/qgis-openlayers-bsas-plugin/bsas_icon.png</icon>
         <author_name><![CDATA[Martin Goffan, Kevin Hanna]]></author_name>
-        <download_url>https://kevinjhanna.github.io/qgis-openlayers-bsas-plugin/openlayers_plugin.zip</download_url>
+        <download_url>http://localhost:8000/bsas_openlayers_plugin.zip</download_url><!--kevinjhanna.github.io/qgis-openlayers-bsas-plugin/-->
         <uploaded_by><![CDATA[elpaso]]></uploaded_by>
         <create_date>2016-10-25T15:27:19.041464</create_date>
         <update_date>2016-10-25T15:27:19.041464</update_date>
@@ -21,9 +20,9 @@
         <tracker><![CDATA[https://github.com/kevinjhanna/qgis-openlayers-bsas-plugin/issues]]></tracker>
         <repository><![CDATA[https://github.com/kevinjhanna/qgis-openlayers-bsas-plugin]]></repository>
         <tags><![CDATA[viewer,wkt]]></tags>
-        <downloads>38832</downloads>
-        <average_vote>4.71981120755</average_vote>
-        <rating_votes>25</rating_votes>
+        <downloads>0</downloads>
+        <average_vote>0</average_vote>
+        <rating_votes>0</rating_votes>
         <external_dependencies></external_dependencies>
         <server>False</server>
     </pyqgis_plugin>

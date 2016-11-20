@@ -36,7 +36,7 @@ TRANSLATIONS = i18n/openlayers_de.ts \
 
 # global
 
-PLUGINNAME = openlayers_plugin
+PLUGINNAME = bsas_openlayers_plugin
 
 PY_FILES = __init__.py
 
