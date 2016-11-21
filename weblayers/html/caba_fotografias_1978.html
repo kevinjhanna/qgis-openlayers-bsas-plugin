@@ -31,10 +31,15 @@
             var tiles = new OpenLayers.Layer.TMS(
               "Ciudad de Buenos Aires con Transporte",
               "http://tiles1.usig.buenosaires.gob.ar/mapcache/tms/", // service endpoint
-              { layername: "fotografias_aereas_1978_caba_3857", type: "png" } // required properties
+              {
+                layername: "fotografias_aereas_1978_caba_3857",
+                type: "png",
+                attribution: "Mapas provistos por <a href='http://usig.buenosaires.gov.ar/' target='_blank'>USIG</a>",
+              }
             )
 
             map.addLayer(tiles);
+            map.addControl(new OpenLayers.Control.Attribution());
             oloMarker = new OlOverviewMarker(map, getPathUpper(document.URL) + '/x.png');
         }
     </script>
