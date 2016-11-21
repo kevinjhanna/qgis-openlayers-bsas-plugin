@@ -1,15 +1,10 @@
-# First time
+## For devs
 
-1. ```brew install pyqt```
+1. ```brew install pyqt``` (in macOs)
 2. Move this folder into ~/.qgis2/python/plugins/
 
 # Compile
-3. make clean && make compile
+1. make clean && make compile
 
 # Deploy
-
-4. make package VERSION=<sha-1 del commit>
-
-
-
-    
+1. make package VERSION=<sha-1 del commit>
