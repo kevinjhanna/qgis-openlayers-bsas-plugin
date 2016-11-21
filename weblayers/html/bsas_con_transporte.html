@@ -14,6 +14,7 @@
                 controls: [],
                 projection: new OpenLayers.Projection("EPSG:3857"),
                 units: "m",
+                maxResolution: 156543.0339,
                 adjustZoom: function(zoom) { return zoom; }
             });
 
@@ -32,14 +33,20 @@
               "Ciudad de Buenos Aires con Transporte",
               "http://tiles1.usig.buenosaires.gob.ar/mapcache/tms/", // service endpoint
               {
+                eventListeners: {
+                  "loadstart": layerLoadStart,
+                  "loadend": layerLoadEnd
+                },
+                numZoomLevels: 19,
                 layername: "amba_con_transporte_3857@GoogleMapsCompatible",
                 type: "png",
-                attribution: "Mapas provistos por <a href='http://usig.buenosaires.gov.ar/' target='_blank'>USIG</a>",
+                attribution: "Mapas provistos por <a href='http://usig.buenosaires.gov.ar/' target='_blank'>USIG</a>"
               }
             )
 
             map.addLayer(tiles);
             map.addControl(new OpenLayers.Control.Attribution());
+            map.setCenter(new OpenLayers.LonLat(-38.5, -54.5), 10);
             oloMarker = new OlOverviewMarker(map, getPathUpper(document.URL) + '/x.png');
         }
     </script>

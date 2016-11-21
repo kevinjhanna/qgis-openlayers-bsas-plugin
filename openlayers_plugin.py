@@ -75,10 +75,10 @@ class OpenlayersPlugin:
         QObject.connect(self.overviewAddAction, SIGNAL("toggled(bool)"), self.olOverview.setVisible)
         self._olMenu.addAction(self.overviewAddAction)
 
-        self._actionAbout = QAction("Terms of Service / About", self.iface.mainWindow())
-        QObject.connect(self._actionAbout, SIGNAL("triggered()"), self.dlgAbout, SLOT("show()"))
+        # self._actionAbout = QAction("Terms of Service / About", self.iface.mainWindow())
+        # QObject.connect(self._actionAbout, SIGNAL("triggered()"), self.dlgAbout, SLOT("show()"))
         #? self._actionAbout.triggered.connect(self.dlgAbout, SLOT("show()"))
-        self._olMenu.addAction(self._actionAbout)
+        # self._olMenu.addAction(self._actionAbout)
 
         # self._olLayerTypeRegistry.register(OlGooglePhysicalLayer())
         # self._olLayerTypeRegistry.register(OlGoogleStreetsLayer())
@@ -123,10 +123,10 @@ class OpenlayersPlugin:
                 action.menu().addAction(self._actionGoogleMapsApiKey)
 
         #Create Web menu, if it doesn't exist yet
-        self.iface.addPluginToWebMenu("_tmp", self._actionAbout)
+        # self.iface.addPluginToWebMenu("_tmp", self._actionAbout)
         self._menu = self.iface.webMenu()
         self._menu.addMenu(self._olMenu)
-        self.iface.removePluginWebMenu("_tmp", self._actionAbout)
+        # self.iface.removePluginWebMenu("_tmp", self._actionAbout)
 
         # Register plugin layer type
         self.pluginLayerType = OpenlayersPluginLayerType(self.iface, self.setReferenceLayer,
