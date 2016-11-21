@@ -69,7 +69,7 @@ class OpenlayersPlugin:
         self._olMenu.setIcon(QIcon(":/plugins/openlayers_bsas/bsas_icon.png"))
 
         # Overview
-        self.overviewAddAction = QAction(QApplication.translate("OpenlayersPlugin", "OpenLayers Overview"), self.iface.mainWindow())
+        self.overviewAddAction = QAction(QApplication.translate("OpenlayersPlugin", "Overview"), self.iface.mainWindow())
         self.overviewAddAction.setCheckable(True)
         self.overviewAddAction.setChecked(False)
         QObject.connect(self.overviewAddAction, SIGNAL("toggled(bool)"), self.olOverview.setVisible)
