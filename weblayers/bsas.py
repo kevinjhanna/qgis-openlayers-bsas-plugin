@@ -33,16 +33,16 @@ class OlBSASMapLayerBase(WebLayer3857):
 class OlBSASMapLayer(OlBSASMapLayerBase):
 
     def __init__(self):
-        OlBSASMapLayerBase.__init__(self, name='Con transporte', html='bsas_con_transporte.html')
+        OlBSASMapLayerBase.__init__(self, name='Área Metropolitana de Buenos Aires', html='bsas_con_transporte.html')
 
 class OlBSASFotografia1965MapLayer(OlBSASMapLayerBase):
     
     def __init__(self):
-        OlBSASMapLayerBase.__init__(self, name='Fotos 1965', html='caba_fotografias_1965.html')
+        OlBSASMapLayerBase.__init__(self, name='AMBA Fotos 1965', html='caba_fotografias_1965.html')
 
 class OlBSASFotografia1978MapLayer(OlBSASMapLayerBase):
     
     def __init__(self):
-        OlBSASMapLayerBase.__init__(self, name='Fotos 1978', html='caba_fotografias_1978.html')
+        OlBSASMapLayerBase.__init__(self, name='AMBA Fotos 1978', html='caba_fotografias_1978.html')
 
 
