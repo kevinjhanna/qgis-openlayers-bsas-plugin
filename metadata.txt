@@ -3,11 +3,12 @@ name=Buenos Aires USIG (basemap)
 qgisMinimumVersion=2.3
 description=Buenos Aires, USIG, Base Map and more
 about=Buenos Aires, USIG, Base Map
-version=5.2
+version=5.3
 author=Martin Goffan & Kevin Hanna
 email=mgoffan@itba.edu.ar
 
-changelog=Latest release 5.2.
+changelog=Latest release 5.3.
+    5.3 - Changed map names
     5.2 - Fixed zoom level in 1965 and 1978 maps
     5.1 - Fixed max zoom level
     5.0 - Initial Release
