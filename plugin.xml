@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <plugins>
-    <pyqgis_plugin name="Buenos Aires USIG (basemap)" version="5.1" plugin_id="1">
+    <pyqgis_plugin name="Buenos Aires USIG (basemap)" version="5.2" plugin_id="1">
         <description><![CDATA[Mapa base de la Ciudad Autonoma de Buenos Aires. Construido a partir de los mapas del http://usig.buenosaires.gov.ar/]]></description>
         <about><![CDATA[Basemap de la Ciudad Autonoma de Buenos Aires]]></about>
-        <version>5.1</version>
+        <version>5.2</version>
         <trusted>True</trusted>
         <qgis_minimum_version>2.0.0</qgis_minimum_version>
         <qgis_maximum_version>2.99.0</qgis_maximum_version>
