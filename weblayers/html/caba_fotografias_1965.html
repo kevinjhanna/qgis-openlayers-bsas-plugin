@@ -32,6 +32,11 @@
               "Ciudad de Buenos Aires con Transporte",
               "http://tiles1.usig.buenosaires.gob.ar/mapcache/tms/", // service endpoint
               {
+                eventListeners: {
+                  "loadstart": layerLoadStart,
+                  "loadend": layerLoadEnd
+                },
+                numZoomLevels: 18,
                 layername: "fotografias_aereas_1965_caba_3857@GoogleMapsCompatible",
                 type: "png",
                 attribution: "Mapas provistos por <a href='http://usig.buenosaires.gov.ar/' target='_blank'>USIG</a>",
